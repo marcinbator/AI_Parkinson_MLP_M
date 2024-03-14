@@ -2,7 +2,7 @@ import hickle as hkl
 
 from DataLoader import DataLoader
 
-dataProcessor = DataLoader("parkinsons.data")
+dataProcessor = DataLoader("data/parkinsons.data")
 data = None
 target = None
 
@@ -11,7 +11,7 @@ def loadData():
     global data, target
 
     dataProcessor.loadAndSaveData(True)
-    data, target = hkl.load('parkinsons.hkl')
+    data, target = hkl.load('data/parkinsons.hkl')
 
 
 loadData()
